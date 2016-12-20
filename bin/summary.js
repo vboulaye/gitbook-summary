@@ -27,9 +27,10 @@ program
   .option("-u, --unchanged [list]", "unchanged catalog like `request.js`, default is `[]`.")
   .option("-o, --outputfile [string]", "output file, defaut is `./SUMMARY.md`")
   .option("-s, --sortedBy [string]", "sorted by sortedBy, for example: `num-`, defaut is sorted by characters")
+  .option("-l, --levelsigns <list>", "sign to use, for eachlevel, example: `###,-`, default is -")
   .action(function(options) {
     // generate `SUMMARY.md`
-    // Fixme 
+    // Fixme
     // if (options.length >= 1) {
     //   console.log(color.red('\nError! The sub commands "%s" has been deprecated, please read the follow messages:'), cmd);
     //   program.help();
